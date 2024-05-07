@@ -1,0 +1,22 @@
+public class Singleton {
+    private static Singleton instance;
+
+    // Constructor privado para evitar la instanciación desde fuera de la clase
+    private Singleton() {
+        // Constructor vacío o con lógica necesaria
+    }
+
+    // Método estático para obtener la instancia única de la clase
+    public static Singleton getInstance() {
+        if (instance == null) {
+            // Si la instancia aún no ha sido creada, la creamos
+            instance = new Singleton();
+        }
+        return instance;
+    }
+
+    // Métodos de la clase Singleton
+    public void metodoEjemplo() {
+        // Lógica de la función
+    }
+}
